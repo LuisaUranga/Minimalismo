@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisa Uranga</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="IMAGENES/logo museo.webp" width="90" height="90" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item active"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item active"><a class="nav-link" href="artistas.html">Artistas</a></li>
+                <li class="nav-item active"><a class="nav-link" href="tendencias.html">Tendencias</a></li>
+                <li class="nav-item active"><a class="nav-link" href="reservas.html">Reservas</a></li>
+                <li class="nav-item active"><a class="nav-link" href="iniciosesion.html">Inicio de Sesión</a></li>
+            </ul>
+            <!-- BUSCADOR CON PHP -->
+            <form class="form-inline" action="resultados_buscar.php" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<!-- FIN DEL NAVBAR -->
+
+<!-- REGISTRO -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="w-100">
+                <h2>Regístrate en el sitio</h2>
+                <!-- Mostrar mensaje de éxito -->
+                <?php if (isset($_GET['registro']) && $_GET['registro'] == 'exito'): ?>
+                    <div class="alert alert-success" role="alert">
+                        ¡Registro exitoso!
+                    </div>
+                <?php endif; ?>
+                <form action="registro.php" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="usuario" name="usuario" maxlength="12">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" maxlength="12">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="si" checked>
+                        <label class="form-check-label" for="newsletter">Sí, deseo recibir información por correo.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Registrarse</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="IMAGENES/prado1.png" alt="Imagen de Registro" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Dirección: Calle Rodriguez 173</p>
+                <p>Teléfono: 011 - 2895 - 5993</p>
+                <p>Email: info@moviemiento.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Redes Sociales</h5>
+                <a href="#" class="text-white"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5>Suscríbete</h5>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Introduce tu email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FIN FOOTER -->
+
+<!-- SCRIPTS --> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

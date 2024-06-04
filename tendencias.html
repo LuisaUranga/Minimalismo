@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisa Uranga</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+         
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white"> 
+    <!-- Image and text -->
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="IMAGENES/logo museo.webp" width="90" height="90" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="galeria.html">Galeria <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="artistas.html">Artistas <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="tendencias.html">Tendencias <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="quienes.html">Reservas <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <a class="nav-link" href="iniciosesion.html">Inicio de Sesion <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <!-- BUSCADOR CON PHP -->
+        <nav class="navbar navbar-light">
+            <form class="form-inline" action="resultados_buscar.php" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+    </div>
+</nav>
+
+
+</header>
+
+<!-- FIN DEL NAV BAR -->
+
+ <section class="timeline">
+    <h2>Línea de Tiempo</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1963</h3>
+                    <p>Primer trabajo con luces fluorescentes.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1966</h3>
+                    <p>Exposición individual en la Galería Nacional de Canadá.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1996</h3>
+                    <p>Retrospectiva en el Museo Solomon R. Guggenheim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="light-gallery">
+    <h2>Galería de Luz</h2>
+        <div class="light-gallery-container">
+            <div class="light">
+                <img src="IMAGENES/obra3dan.jpeg" alt="Obra de Luz 1">
+                <p>Instalación en el Museo de Arte Moderno</p>
+            </div>
+            <div class="light">
+                <img src="IMAGENES/foto2.jpg" alt="Obra de Luz 2">
+                <p>Exposición en la Galería Nacional</p>
+            </div>
+            <div class="light">
+                <img src="IMAGENES/obra2dan.jpg" alt="Obra de Luz 3">
+                <p>Instalación en el Centro de Arte Contemporáneo</p>
+            </div>
+        </div>
+</section>
+
+<section class="trivia">
+    <h2>Datos Curiosos</h2>
+        <ul>
+            <li>Dan Flavin fue un pionero en el uso de luces fluorescentes en el arte.</li>
+            <li>Sus obras son conocidas por transformar el espacio a través de la luz y el color.</li>
+            <li>Flavin consideraba sus obras como "propuestas" más que como piezas definitivas.</li>
+        </ul>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Dirección: Calle Rodriguez 173</p>
+                <p>Teléfono: 011 - 2895 - 5993</p>
+                <p>Email: info@moviemiento.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Redes Sociales</h5>
+                <a href="#" class="text-white"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5>Suscríbete</h5>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Introduce tu email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FIN FOOTER -->
+
+<!-- SCRIPTS --> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+  <!-- BOOTSTRAP--> 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('arrow-button').addEventListener('click', function() {
+    const siguienteSeccion = document.querySelector('.blockquote'); // Selecciona la siguiente sección
+    siguienteSeccion.scrollIntoView({ behavior: 'smooth' }); // Desplaza suavemente hasta la siguiente sección
+    });
+</script>
+
+</body>
+</html>

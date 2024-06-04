@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- BOOTSTRAP--> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Luisa Uranga</title>
+</head>
+
+<body>
+  <header>
+     
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white"> 
+    <!-- Image and text -->
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="IMAGENES/logo museo.webp" width="90" height="90" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="galeria.html">Galeria <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="artistas.html">Artistas <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="tendencias.html">Tendencias <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="quienes.html">Reservas <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <a class="nav-link" href="iniciosesion.html">Inicio de Sesion <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <!-- BUSCADOR CON PHP -->
+        <nav class="navbar navbar-light">
+            <form class="form-inline" action="resultados_buscar.php" method="GET">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+    </div>
+</nav>
+
+
+</header>
+
+<!-- Reproductor de audio -->
+  <audio id="audio" src="IMAGENES/audioguia.mp3" autoplay loop controls></audio>
+
+<!-- FIN DEL NAV BAR -->
+
+<div class="gallery">
+  <div class="aartist">
+    <h2>DAN FLAVIN</h2>
+      <div class="images">
+        <img src="IMAGENES/foto3.jpeg" alt="Imagen 1">
+        <img src="IMAGENES/foto14.png" alt="Imagen 2">
+        <img src="IMAGENES/fotodan.webp" alt="Imagen 3">
+      </div>
+  </div>
+
+  <div class="aartist">
+    <h2>DONALD JUDD</h2>
+      <div class="images">
+        <img src="IMAGENES/obra1judd.jpeg" alt="Imagen 1">
+        <img src="IMAGENES/obra2judd.jpeg" alt="Imagen 2">
+        <img src="IMAGENES/obra3judd.jpeg" alt="Imagen 3">
+      </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid sol-lewitt">
+  <div class="container">
+    <h1 class="display-4">Sol LeWitt</h1>
+      <p class="lead">"Los artistas conceptuales son más bien místicos que racionalistas. Saltan a conclusiones que la lógica no puede alcanzar".</p>
+  </div>
+</div>
+
+  <div class="gallery">
+    <div class="aartist">
+      <h2>AD REINHARDT</h2>
+        <div class="images">
+          <img src="IMAGENES/obra3ad.png" alt="Imagen 1">
+          <img src="IMAGENES/obra1ad.png" alt="Imagen 2">
+          <img src="IMAGENES/obra2ad.jpeg" alt="Imagen 3">
+        </div>
+    </div>
+
+    <div class="aartist">
+      <h2>RICHARD SERRA</h2>
+        <div class="images">
+          <img src="IMAGENES/obra1serra.webp" alt="Imagen 1">
+          <img src="IMAGENES/obra2serra.jpeg" alt="Imagen 2">
+          <img src="IMAGENES/obra3serra.jpeg" alt="Imagen 3">
+        </div>
+    </div>
+  </div>
+
+<img src="IMAGENES/ledwin.png" alt="Imagen Ledwin" class="full-width">
+
+<div class="gallery">
+  <div class="aartist">
+    <h2>CARL ANDRE</h2>
+      <div class="images">
+        <img src="IMAGENES/obra1carl.webp" alt="Imagen 1">
+        <img src="IMAGENES/obra2carl.jpeg" alt="Imagen 2">
+        <img src="IMAGENES/obra3carl.jpeg" alt="Imagen 3">
+      </div>
+  </div>
+
+  <div class="aartist">
+    <h2>FRANK STELLA</h2>
+      <div class="images">
+        <img src="IMAGENES/obra1frank.webp" alt="Imagen 1">
+        <img src="IMAGENES/obra2frank.jpeg" alt="Imagen 2">
+        <img src="IMAGENES/obra3frank.jpeg" alt="Imagen 3">
+      </div>
+  </div>
+</div>
+
+<!-- Comentarios y opiniones de los visitantes -->
+  <div class="comment-form">
+    <h2>Deja tu comentario:</h2>
+    <form id="comment-form">
+      <input type="text" id="username" placeholder="Nombre de usuario" required>
+      <p></p>
+      <textarea id="comment" placeholder="Escribe tu comentario aquí" required></textarea>
+      <button type="submit">Publicar</button>
+    </form>
+  </div>
+  <div class="comments">
+    <h2>Comentarios:</h2>
+    <ul id="comment-list">
+      <!-- Los comentarios se agregarán dinámicamente aquí -->
+    </ul>
+  </div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Dirección: Calle Rodriguez 173</p>
+                <p>Teléfono: 011 - 2895 - 5993</p>
+                <p>Email: info@moviemiento.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Redes Sociales</h5>
+                <a href="#" class="text-white"><i class="fa fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-twitter-square fa-2x"></i></a>
+                <a href="#" class="text-white"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5>Suscríbete</h5>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Introduce tu email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FIN FOOTER -->
+
+<!-- SCRIPTS --> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+  <!-- BOOTSTRAP--> 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+    document.getElementById('arrow-button').addEventListener('click', function() {
+        const siguienteSeccion = document.querySelector('.blockquote'); // Selecciona la siguiente sección
+        siguienteSeccion.scrollIntoView({ behavior: 'smooth' }); // Desplaza suavemente hasta la siguiente sección
+    });
+</script>
+
+</body>
+</html>
+  <!-- BOOTSTRAP--> 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+    document.getElementById('arrow-button').addEventListener('click', function() {
+        const siguienteSeccion = document.querySelector('.blockquote'); // Selecciona la siguiente sección
+        siguienteSeccion.scrollIntoView({ behavior: 'smooth' }); // Desplaza suavemente hasta la siguiente sección
+    });
+</script>
+
+</body>
+</html>
+
+
